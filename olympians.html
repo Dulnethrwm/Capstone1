@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Olympians</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/olympians_styles.css') }}">
+    <script src="{{ url_for('static', filename='js/olympians.js') }}"></script>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/olympic_history.html">Olympic History</a></li>
+            <li><a href="/winter_olympics.html">Winter Olympics</a></li>
+            <li><a href="/games.html">Games</a></li>
+            <li><a href="/paralympics.html">Paralympics</a></li>
+            <li><a href="/olympians.html">Olympians</a></li>
+            <li><a href="/records.html">Records</a></li>
+        </ul>
+    </nav>
+
+    <!-- Olympians Content -->
+    <section id="olympians">
+        <h2>Olympians</h2>
+
+        <!-- Former Olympians -->
+        <div class="category">
+            <h3>Former Olympians</h3>
+            <div class="athlete" id="former-olympian-1">
+                <img src="images/michael_phelps.jpg" alt="Michael Phelps">
+                <h4>Michael Phelps</h4>
+                <p>Michael Phelps is arguably the greatest Olympian ever. He has the most Olympic gold medals and numerous other accolades.</p>
+                <button onclick="toggleVisibility('former-athletes')">Read More</button>
+                <div class="more-info" id="former-athletes" style="display:none;">
+                    <ul>
+                        <li><strong>Michael Jordan:</strong> Basketball legend.</li>
+                        <li><strong>Usain Bolt:</strong> 8-time Olympic gold medalist.</li>
+                        <li><strong>Mark Spitz:</strong> 7 gold medals in a single Olympics.</li>
+                        <li><strong>Nadia Comaneci:</strong> Achieved a perfect 10 in gymnastics.</li>
+                        <li><strong>Paavo Nurmi:</strong> Finnish track and field star.</li>
+                        <li><strong>Lance Armstrong:</strong> Cycling champion.</li>
+                        <li><strong>Larisa Latynina:</strong> 9 gold medals in gymnastics.</li>
+                        <li><strong>Ian Thorpe:</strong> Australian swimming legend.</li>
+                        <li><strong>Jackie Joyner-Kersee:</strong> Heptathlon record breaker.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Current Olympians -->
+        <div class="category">
+            <h3>Current Olympians</h3>
+            <div class="athlete" id="current-o

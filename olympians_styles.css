@@ -1,0 +1,86 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    background-color: #333;
+    margin: 0;
+    overflow: hidden;
+}
+
+nav ul li {
+    float: left;
+}
+
+nav ul li a {
+    color: white;
+    padding: 14px 20px;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    background-color: #111;
+}
+
+#olympians {
+    margin: 20px;
+}
+
+.category {
+    margin-bottom: 30px;
+}
+
+.category h3 {
+    font-size: 24px;
+    color: #333;
+}
+
+.athlete {
+    margin: 10px 0;
+}
+
+.athlete img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+.athlete h4 {
+    font-size: 20px;
+    color: #333;
+}
+
+.athlete p {
+    font-size: 16px;
+    color: #555;
+}
+
+button {
+    background-color: #008CBA;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #005f6b;
+}
+
+.more-info ul {
+    list-style-type: none;
+    padding-left: 20px;
+}
+
+.more-info li {
+    margin: 5px 0;
+}

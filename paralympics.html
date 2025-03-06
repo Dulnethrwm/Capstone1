@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paralympics</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/olympic-history">Olympic History</a></li>
+            <li><a href="/winter-olympics">Winter Olympics</a></li>
+            <li><a href="/games">Games</a></li>
+            <li><a href="/paralympics">Paralympics</a></li> <!-- New Link -->
+            <li><a href="/olympians">Olympians</a></li>
+            <li><a href="#records">Records</a></li>
+        </ul>
+    </nav>
+
+    <!-- Paralympics Content -->
+    <section id="paralympics">
+        <h2>The Paralympic Games</h2>
+
+        <p>The Paralympic Games or Paralympics is a periodic series of international multisport events involving athletes with a range of disabilities. There are Winter and Summer Paralympic Games, which since the 1988 Summer Olympics in Seoul, South Korea, have been held shortly after the corresponding Olympic Games. All Paralympic Games are governed by the International Paralympic Committee (IPC).</p>
+
+        <p>The Paralympics began as a small gathering of British World War II veterans in 1948. The 1960 Games in Rome drew 400 athletes with disabilities from 23 countries, as proposed by doctor Antonio Maglio. Currently, it is one of the largest international sporting events: the 2020 Summer Paralympics featured 4,520 athletes from 163 National Paralympic Committees. Paralympians strive for equal treatment with non-disabled Olympic athletes, but there is a large funding gap between Olympic and Paralympic athletes.</p>
+
+        <h3>Key Milestones in the Paralympic Games</h3>
+        <ul>
+            <li><strong>1948:</strong> The Paralympic Games began with a small gathering of British World War II veterans.</li>
+            <li><strong>1960:</strong> The Rome Paralympics featured 400 athletes from 23 countries and marked the first large-scale international event for disabled athletes.</li>
+            <li><strong>1988:</strong> The Seoul Summer Paralympics were held right after the corresponding Olympic Games for the first time.</li>
+            <li><strong>2020:</strong> The Tokyo Summer Paralympics were the largest in history, with 4,520 athletes from 163 countries.</li>
+        </ul>
+
+        <p>Today, the Paralympic Games showcase the extraordinary skills of athletes with disabilities, proving that physical limitations cannot hinder the pursuit of excellence. Athletes compete in a variety of sports, including wheelchair basketball, para-swimming, and para-athletics, among others.</p>
+
+        <h3>The Importance of the Paralympics</h3>
+        <p>The Paralympics provide athletes with disabilities an opportunity to compete on the world stage, promote inclusivity, and raise awareness of the challenges faced by individuals with disabilities. The Games continue to grow in popularity, inspiring millions around the world.</p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 The Olympics - A Global Celebration</p>
+    </footer>
+</body>
+
+<script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</html>

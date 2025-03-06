@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Olympic Games</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/olympic-history">Olympic History</a></li>
+            <li><a href="/winter-olympics">Winter Olympics</a></li>
+            <li><a href="/games">Games</a></li> 
+            <li><a href="/paralympics">Paralympics</a></li>
+            <li><a href="/olympians">Olympians</a></li>
+            <li><a href="#records">Records</a></li>
+        </ul>
+    </nav>
+
+    <!-- Games Content -->
+    <section id="games">
+        <h2>Olympic Games Highlights</h2>
+
+        <div class="game">
+            <img src="{{ url_for('static', filename='images/2024.jpg') }}" alt="2024 Olympics">
+            <h3>2024 Summer Olympics</h3>
+            <p>The 2024 Summer Olympics, officially known as the Games of the XXXIII Olympiad, will be held in Paris, France, from July 26 to August 11, 2024. This historic event marks the third time Paris has hosted the Olympics, having previously welcomed the Games in 1900 and 1924.</p>
+        </div>
+
+        <div class="game">
+            <img src="{{ url_for('static', filename='images/2020.jpg') }}" alt="2020 Olympics">
+            <h3>2020 Summer Olympics</h3>
+            <p>The 2020 Summer Olympics, officially known as the Games of the XXXII Olympiad, took place in Tokyo, Japan, from July 23 to August 8, 2021. Originally scheduled for 2020, the Games were postponed to 2021 due to the global COVID-19 pandemic, marking the first time in Olympic history that the event was rescheduled.</p>
+        </div>
+
+        <div class="game">
+            <img src="{{ url_for('static', filename='images/2016.jpg') }}" alt="2016 Olympics">
+            <h3>2016 Summer Olympics</h3>
+            <p>The 2016 Summer Olympics, officially known as the Games of the XXXI Olympiad, were held in Rio de Janeiro, Brazil, from August 5 to August 21, 2016. This was the first time the Olympics were hosted in South America, marking a historic milestone for the Games.</p>
+        </div>
+
+        <div class="game">
+            <img src="{{ url_for('static', filename='images/2012.jpg') }}" alt="2012 Olympics">
+            <h3>2012 Summer Olympics</h3>
+            <p>The 2012 Summer Olympics, officially known as the Games of the XXX Olympiad, were held in London, United Kingdom, from July 27 to August 12, 2012. This was the third time London hosted the Summer Olympics, following the 1908 and 1948 Games.</p>
+        </div>
+
+        <div class="game">
+            <img src="{{ url_for('static', filename='images/2008.jpg') }}" alt="2008 Olympics">
+            <h3>2008 Summer Olympics</h3>
+            <p>The 2008 Summer Olympics, officially known as the Games of the XXIX Olympiad, were held in Beijing, China, from August 8 to August 24, 2008. This event marked China's first time hosting the Olympic Games, making it a significant milestone in the country's history.</p>
+        </div>
+
+        <div class="game">
+            <img src="{{ url_for('static', filename='images/2004.jpg') }}" alt="2004 Olympics">
+            <h3>2004 Summer Olympics</h3>
+            <p>The 2004 Summer Olympics, officially known as the Games of the XXVIII Olympiad, were held in Athens, Greece, from August 13 to 29, 2004. This edition of the Games was especially significant because it marked the return of the Olympics to their birthplace, as the ancient Olympic Games were first held in Olympia, Greece, and the modern Olympics were inaugurated in Athens in 1896.</p>
+        </div>
+
+        <div class="game">
+            <img src="{{ url_for('static', filename='images/2000.jpg') }}" alt="2000 Olympics">
+            <h3>2000 Summer Olympics</h3>
+            <p>The 2000 Summer Olympics, officially known as the Games of the XXVII Olympiad, were held in Sydney, Australia, from September 15 to October 1, 2000. This was the second time the Summer Games had been hosted in the Southern Hemisphere, with the first being in Melbourne in 1956.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 The Olympics - A Global Celebration</p>
+    </footer>
+</body>
+
+<script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</html>

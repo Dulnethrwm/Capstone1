@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Olympic Records</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+    h2 {
+      cursor: pointer;
+      color: #007bff;
+      margin-bottom: 5px;
+    }
+    .category {
+      margin-left: 20px;
+      display: none;
+      margin-top: 10px;
+    }
+    .record {
+      margin-left: 20px;
+      padding: 5px;
+      background-color: #f0f0f0;
+      border-radius: 5px;
+      margin-bottom: 5px;
+    }
+  </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/olympic_history.html">Olympic History</a></li>
+            <li><a href="/winter_olympics.html">Winter Olympics</a></li>
+            <li><a href="/games.html">Games</a></li>
+            <li><a href="/paralympics.html">Paralympics</a></li>
+            <li><a href="/olympians.html">Olympians</a></li>
+        </ul>
+    </nav>
+
+  <h1>Olympic Records</h1>
+  
+  <!-- Swimming -->
+  <h2 onclick="toggleCategory('swimming')">Swimming</h2>
+  <div id="swimming" class="category">
+    <h3 onclick="toggleRecords('womenSwimming')">Women's Olympic Records</h3>
+    <div id="womenSwimming" class="record">
+      <ul>
+        <li>50m Freestyle: Sarah Sjoestroem, Sweden, 23.61, Paris, 2 Aug 2024</li>
+        <li>100m Freestyle: Mc Keon Emma, Australia, 51.96, Tokyo, 29 Jul 2021</li>
+        <li>200m Freestyle: Mollie O'Callaghan, Australia, 1:53.27, Paris, 28 Jul 2024</li>
+        <!-- Add more records as needed -->
+      </ul>
+    </div>
+    
+    <h3 onclick="toggleRecords('mixedSwimming')">Mixed Olympic Records</h3>
+    <div id="mixedSwimming" class="record">
+      <ul>
+        <li>4 x 100m Medley Relay: USA, 3:37.43, Paris, 2 Aug 2024</li>
+        <!-- Add more records as needed -->
+      </ul>
+    </div>
+  </div>
+
+  <!-- Weightlifting -->
+  <h2 onclick="toggleCategory('weightlifting')">Weightlifting</h2>
+  <div id="weightlifting" class="category">
+    <h3 onclick="toggleRecords('menWeightlifting')">Men's Olympic Records</h3>
+    <div id="menWeightlifting" class="record">
+      <ul>
+        <li>61kg - Clean & Jerk: Li Fabin, China, 172 kg, Tokyo, 25 Jul 2021</li>
+        <li>67kg - Clean & Jerk: Chen Lijun, China, 187 kg, Tokyo, 25 Jul 2021</li>
+        <li>73kg - Snatch: Shi Zhiyong, China, 166 kg, Tokyo, 28 Jul 2021</li>
+        <!-- Add more records as needed -->
+      </ul>
+    </div>
+
+    <h3 onclick="toggleRecords('womenWeightlifting')">Women's Olympic Records</h3>
+    <div id="womenWeightlifting" class="record">
+      <ul>
+        <li>49kg - Snatch: Hou Zhihui, China, 94 kg, Tokyo, 23 Jul 2021</li>
+        <li>55kg - Clean & Jerk: Diaz Hidilyn, Philippines, 127 kg, Tokyo, 26 Jul 2021</li>
+        <li>59kg - Snatch: Shifang Luo, China, 107 kg, Paris, 7 Aug 2024</li>
+        <!-- Add more records as needed -->
+      </ul>
+    </div>
+  </div>
+
+  <script>
+    function toggleCategory(category) {
+      var categoryDiv = document.getElementById(category);
+      categoryDiv.style.display = categoryDiv.style.display === 'none' || categoryDiv.style.display === '' ? 'block' : 'none';
+    }
+
+    function toggleRecords(recordsId) {
+      var recordsDiv = document.getElementById(recordsId);
+      recordsDiv.style.display = recordsDiv.style.display === 'none' || recordsDiv.style.display === '' ? 'block' : 'none';
+    }
+  </script>
+
+</body>
+</html>

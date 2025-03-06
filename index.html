@@ -1,5 +1,3 @@
-## Author: Dulneth
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,13 +10,13 @@
     <!-- Navigation Bar -->
     <nav>
         <ul>
-            <li><a href="#olympics">Olympics</a></li>
-            <li><a href="#history">History</a></li>
-            <li><a href="#winter">Winter Olympics</a></li>
-            <li><a href="#games">Games</a></li>
-            <li><a href="#paralympics">Paralympics</a></li>
-            <li><a href="#olympians">Olympians</a></li>
-            <li><a href="#records">Records</a></li>
+            <li><a href="/">Home</a></li>
+            <li><a href="/olympic_history.html">Olympic History</a></li>
+            <li><a href="/winter_olympics.html">Winter Olympics</a></li>
+            <li><a href="/games.html">Games</a></li>
+            <li><a href="/paralympics.html">Paralympics</a></li> 
+            <li><a href="/olympians.html">Olympians</a></li>
+            <li><a href="/records.html">Records</a></li>
         </ul>
     </nav>
 
@@ -61,6 +59,23 @@
             </div>
         </div>
     </section>
+
+    <!-- Olympics Section (Including History) -->
+    <section id="olympics">
+        <h2>History of the Olympics</h2>
+        <div class="content-text">
+            <p>The Olympics are a grand celebration of global athleticism and unity, held every four years and featuring the world’s premier athletes competing in a diverse array of sports. Originating from ancient Greece, where they began as a religious festival honoring Zeus, the modern Olympics were revived in 1896 and have since grown into one of the most watched and anticipated sporting events worldwide.</p>
+
+            <p>The Games bring together nations in a spirit of friendly competition and cooperation, highlighting the shared values of excellence, respect, and fair play. From the fast-paced thrills of track and field to the elegant precision of figure skating, the Olympics showcase a wide range of sports that capture the imagination and inspire millions.</p>
+
+            <p>In addition to the athletic feats, the Olympics also emphasize cultural exchange and global solidarity, with athletes and spectators from around the world coming together to celebrate diverse traditions and forge lasting connections. Whether you’re watching from the stands or tuning in from home, the Olympics offer a unique opportunity to witness the extraordinary achievements of human endeavor and to partake in a global celebration of sportsmanship and unity.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 The Olympics - A Global Celebration</p>
+    </footer>
 </body>
 
 <script src="{{ url_for('static', filename='js/script.js') }}"></script>
