@@ -1,0 +1,67 @@
+## Author: Dulneth
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to the Olympics!</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="#olympics">Olympics</a></li>
+            <li><a href="#history">History</a></li>
+            <li><a href="#winter">Winter Olympics</a></li>
+            <li><a href="#games">Games</a></li>
+            <li><a href="#paralympics">Paralympics</a></li>
+            <li><a href="#olympians">Olympians</a></li>
+            <li><a href="#records">Records</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <h1>Welcome to the Olympics!</h1>
+        <p>The Olympics represent the ultimate celebration of athletic achievement and global unity...</p>
+    </section>
+
+    <!-- Slideshow Section -->
+    <section id="slideshow">
+        <div class="slideshow-container">
+            <div class="slide fade">
+                <img src="{{ url_for('static', filename='images/olympics.jpg') }}" alt="Olympics">
+                <div class="text">Olympics</div>
+            </div>
+            <div class="slide fade">
+                <img src="{{ url_for('static', filename='images/history.jpg') }}" alt="History">
+                <div class="text">History</div>
+            </div>
+            <div class="slide fade">
+                <img src="{{ url_for('static', filename='images/winter.jpg') }}" alt="Winter Olympics">
+                <div class="text">Winter Olympics</div>
+            </div>
+            <div class="slide fade">
+                <img src="{{ url_for('static', filename='images/games.jpg') }}" alt="Games">
+                <div class="text">Games</div>
+            </div>
+            <div class="slide fade">
+                <img src="{{ url_for('static', filename='images/paralympics.jpg') }}" alt="Paralympics">
+                <div class="text">Paralympics</div>
+            </div>
+            <div class="slide fade">
+                <img src="{{ url_for('static', filename='images/olympians.jpg') }}" alt="Olympians">
+                <div class="text">Olympians</div>
+            </div>
+            <div class="slide fade">
+                <img src="{{ url_for('static', filename='images/records.jpg') }}" alt="Records">
+                <div class="text">Records</div>
+            </div>
+        </div>
+    </section>
+</body>
+
+<script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</html>
